@@ -14,7 +14,7 @@ pipeline {
 
     stage('Sonar Analysis') {
             steps {
-                   sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.url=URL_OF_SONARQUBE -Dsonar.login=TOKEN_OF_SONARQUBE -Dsonar.projectName=to-do-app \
+                   sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.url=http://52.66.249.10:9000/ -Dsonar.login=squ_c51b4c94a85ece0a29c39b20a297f2f423ffe32a -Dsonar.projectName=to-do-app \
                    -Dsonar.sources=. \
                    -Dsonar.projectKey=to-do-app '''
                }
