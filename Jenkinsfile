@@ -28,7 +28,8 @@ pipeline {
         } */
      
 
-       /*  stage('Docker Build') {
+       /*  
+       stage('Docker Build') {
             steps {
                script{
                    withDockerRegistry(credentialsId: '9ea0c4b0-721f-4219-be62-48a976dbeec0') {
@@ -37,9 +38,11 @@ pipeline {
                  }
                }
             }
-        } */
+        } 
+	*/
 
-       /* stage('Docker Push') {
+       /* 
+       stage('Docker Push') {
             steps {
                script{
                    withDockerRegistry(credentialsId: '9ea0c4b0-721f-4219-be62-48a976dbeec0') {
@@ -47,12 +50,16 @@ pipeline {
                  }
                }
             }
-        } */
+        } 
+*/
+
        /* stage('trivy') {
             steps {
                sh " trivy username/todoapp:latest"
             }
-        } */
+        } 
+*/
+
 	/*	stage('Deploy to Docker') {
             steps {
                script{
@@ -61,7 +68,8 @@ pipeline {
                  }
                }
             }
-        } */
+        }
+*/
 
     }
 }
